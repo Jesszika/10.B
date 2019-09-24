@@ -3,13 +3,13 @@
 using namespace std;
 
 int main()
-{   double szam1, szam2;
-    cout << "szam1: ";
-    cin >> szam1;
-    cout << "szam2: ";
-    cin >> szam2;
-    cout << szam1 + szam2 << endl;
-
-    system("pause")
+{   double a, b, c;
+    cout <<"a:";
+    cin >>a;
+    cout <<"b:";
+    cin >>b;
+    cout <<"c:";
+    cin >>c;
+    cout << a - b + c << endl;
     return 0;
 }
