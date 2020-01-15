@@ -4,36 +4,30 @@ using namespace std;
 
 int main()
 {
-    int a, b, c, d, e, f, g, h, oszto;
-    cout << "e=";
-    cin >> e;
-    cout << "f=";
-    cin >> f;
-
-
-    for (a=e; a<f; a++) {
-     d=0;
-     b=a;
-
-    while (b>0) {
-     c=b % 10;
-     b=b / 10;
-     d=d*10+c;for (a=e; a<f; a++)
-     }
-     if (a==d) {
-       h=1;
-     }
-
-     for (oszto=2; oszto<a/2+1; oszto++) {
-     if (a%oszto==0) {
-        g=0;
-      }
-
-     }
-
+  int tomb1[100];
+  int tomb2[100];
+  int i, c, d, j, N, M, S=0;
+  cout << "N=";
+  cin >> N;
+  cout << "M=";
+  cin >> M;
+  for (i=0; i<N; i++) {
+    cout << "tomb1["<< i << "]=";
+    cin >> tomb1[i];
     }
-    if (h==1 && g==1) {
-    cout << a << endl;
+  for (i=0; i<M; i++) {
+    cout << "tomb2["<< j << "]=";
+    cin >> tomb2[j];
     }
+  if (tomb1[i]==tomb2[j]) {
+    S+=tomb1[i];
+  }
+  while (S>0) {
+    c=S%10;
+    S=S/10;
+    d=d*10+c;
+  }
+
+    cout << "osszeg=" << S;
     return 0;
 }
